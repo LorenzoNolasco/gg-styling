@@ -111,27 +111,34 @@
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
-          data-ride="carousel"
+          data-bs-ride="carousel"
         >
           <!-- Carousel Indicators -->
-          <ol class="carousel-indicators" style="margin: 0rem">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
               class="active"
+              aria-current="true"
+              aria-label="Slide 1"
               style="background-color: green"
-            ></li>
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
               style="background-color: green"
-            ></li>
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
               style="background-color: green"
-            ></li>
-          </ol>
+            ></button>
+          </div>
           <!-- Carousel Items -->
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -145,26 +152,24 @@
             </div>
           </div>
           <!-- Carousel Controls -->
-          <a
+          <button
             class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-            style="background-color: black"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
             class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-            style="background-color: black"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
         <!-- Calendar of Events Section -->
         <div class="events mt-4">
@@ -199,7 +204,7 @@
           type="button"
           class="btn btn-lg btn-danger"
           data-bs-toggle="popover"
-          data-bs-title="<ul><li>Monday 1-7PM </li> <li>Tuesday 1-7PM </li><li>Wednesday 1-8PM </li><li>Thursday 1-7PM </li><li>Friday 1-9PM </li><li>Saturday 1-8PM </li><li>Sunday 1-8PM </li></ul>"
+          data-bs-content="<ul><li>Monday 1-7PM </li> <li>Tuesday 1-7PM </li><li>Wednesday 1-8PM </li><li>Thursday 1-7PM </li><li>Friday 1-9PM </li><li>Saturday 1-8PM </li><li>Sunday 1-8PM </li></ul>"
         >
           Click For Hours
         </button>
